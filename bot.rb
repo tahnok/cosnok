@@ -1,5 +1,9 @@
 require 'cinch'
 
+# CONFIG
+#
+botname = 'cosnok'
+
 plugins_to_load = []
 
 Dir['plugins/*.rb'].each do |plugin|
@@ -11,9 +15,9 @@ bot = Cinch::Bot.new do
   configure do |c|
     c.server = "irc.freenode.org"
     c.channels = ["#mcgill"]
-    c.nick = 'cosnok'
+    c.nick = botname
     c.plugins.plugins = plugins_to_load
-    c.plugins.prefix = /^\$/
+    c.plugins.prefix = /^#{botname}\:? ?/
   end
 end
 
