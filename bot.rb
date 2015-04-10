@@ -20,9 +20,6 @@ bot = Cinch::Bot.new do
     c.plugins.prefix = /^#{botname}\:? ?/
   end
 
-  on :message, /#{botname}\: (help|halp)/ do |m|
-    m.reply "available commands: #{plugins_to_load.map(&:help).flatten.join(", ")}"
-  end
 end
 
 bot.start
