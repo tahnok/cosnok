@@ -7,4 +7,8 @@ class Hello
     m.reply "Hello, #{m.user.nick}"
   end
 
+  def self.help
+    "help - get help"
+  end
+
 end

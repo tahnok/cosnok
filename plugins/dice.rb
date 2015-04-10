@@ -9,4 +9,8 @@ class Dice
     end)
   end
 
+  def self.help
+    "roll [N]d[N] - rolls a dice (eg 2d6)"
+  end
+
 end

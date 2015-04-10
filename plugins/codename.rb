@@ -3,6 +3,10 @@ class Codename
 
   match "codename"
 
+  def self.help
+    "codename - makes a random codename for a project"
+  end
+
   def execute(m)
     m.reply make_codename
   end
