@@ -1,4 +1,5 @@
 require 'cinch'
+require "cinch/plugins/identify"
 
 # CONFIG
 #
@@ -14,11 +15,15 @@ end
 bot = Cinch::Bot.new do
   configure do |c|
     c.server = "irc.freenode.net"
-    #c.password = "supersecret"
     c.channels = ["#mcgill"]
     c.nick = botname
-    c.plugins.plugins = plugins_to_load
+    c.plugins.plugins = plugins_to_load << Cinch::Plugins::Identify
     c.plugins.prefix = /^#{botname}\:? ?/
+    c.plugins.options[Cinch::Plugins::Identify] = {
+      username: botname,
+      password: ENV['NICKSERV_PASS'],
+      type:     :nickserv,
+    }
   end
 
 end

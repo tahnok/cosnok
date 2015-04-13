@@ -2,6 +2,8 @@ GEM
   remote: https://rubygems.org/
   specs:
     cinch (2.2.4)
+    cinch-identify (1.7.0)
+      cinch (~> 2.0)
     coderay (1.1.0)
     method_source (0.8.2)
     pry (0.10.1)
@@ -15,4 +17,5 @@ PLATFORMS
 
 DEPENDENCIES
   cinch
+  cinch-identify
   pry
