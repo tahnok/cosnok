@@ -4,4 +4,3 @@ source "https://rubygems.org"
 
 gem 'pry'
 gem 'cinch'
-gem 'cinch-identify'
