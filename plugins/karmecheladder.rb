@@ -20,6 +20,8 @@ class Karmecheladder
       "Halfway to a 100! I bet that feels good. You are hereby awarded the SEMI SERIOUS KARMA PERSON"
     when 100
       "100! that is more 0 karma by a lot! the coveted AMUSING IRC DENIZEN rung is yours!"
+    when 200
+      "200 TWICE AS OK AS 100! Are you enjoying the dizzying heights of the WEB MASTER IN TRAINING rung?"
     when 250
       "WOW! GOLLY GEE! LOOK AT YOU REACHING THE bit twiddler extraordinaire!"
     when 300
