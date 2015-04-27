@@ -23,7 +23,7 @@ class Karmecheladder
     when 200
       "200 TWICE AS OK AS 100! Are you enjoying the dizzying heights of the WEB MASTER IN TRAINING rung?"
     when 250
-      "WOW! GOLLY GEE! LOOK AT YOU REACHING THE bit twiddler extraordinaire!"
+      "WOW! GOLLY GEE! LOOK AT YOU REACHING THE bit twiddler extraordinaire rung!"
     when 300
       "unreal heir"
     when 500
