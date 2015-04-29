@@ -17,7 +17,7 @@ bot = Cinch::Bot.new do
     c.channels = ["#mcgill"]
     c.nick = botname
     c.plugins.plugins = plugins_to_load
-    c.plugins.prefix = /^#{botname}\:? ?/
+    c.plugins.prefix = /^#{botname}_*\:? ?/
   end
 
   on :connect do |m|
