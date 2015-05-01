@@ -1,4 +1,4 @@
-class Hello
+class Source
   include Cinch::Plugin
 
   match "source"
