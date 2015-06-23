@@ -9,7 +9,7 @@ class Karmecheladder
     return unless m.user.nick == "Nethaera"
     m.reply case karma.to_i
     when 1
-      "wow! your first karma! it's so shinny and useful! you climb the ladder to the GREENTIKE rung!"
+      "wow! your first karma! it's so shiny and useful! you climb the ladder to the GREENTIKE rung!"
     when 10
       "quite a chunk of karma you've got there! you now perch atop the mildly respectable KNEEHIGH RASCALLY SCALLYWAG rung"
     when 20
