@@ -8,7 +8,7 @@ class Karma
   match /(\w+)(\+\+|\-\-)/
 
   def execute(m, user, direction)
-    redis = Redis.new(url: ENV['REDISCLOUD_URL'])
+    redis = Redis.new(url: ENV['REDIS_URL'])
     return unless track_karma?(redis, m, user)
     karma = redis.get("karma:#{user}").to_i || 0
     if direction == "++"
