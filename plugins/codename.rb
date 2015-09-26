@@ -15,7 +15,7 @@ class Codename
     if Random.rand > 0.5
       "#{random("nsa")} #{random("nsa")}"
     else
-      "#{random("adverbs")} #{random("gods")}"
+      "#{random("adverbs")} #{random("nouns")}"
     end
   end
 
