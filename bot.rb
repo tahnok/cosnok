@@ -13,8 +13,8 @@ end
 
 bot = Cinch::Bot.new do
   configure do |c|
-    c.server = "irc.freenode.net"
-    c.channels = ["#mcgill"]
+    c.server = "127.0.0.1"
+    c.channels = ["#tildetown", "bots"]
     c.nick = botname
     c.plugins.plugins = plugins_to_load
     c.plugins.prefix = /^#{botname}_*\:? ?/
