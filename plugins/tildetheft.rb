@@ -4,9 +4,12 @@ class Tildetheft
   match "(.*)"
 
   def execute(m, message)
+    debug "check if #{m.user.nick} is tildebot"
     return unless m.user.nick == "tildebot"
 
+    debug "check if #{message} matches"
     return unless message =~ /: ([^:]*\?) \(/
+    debug "query wolfram for #{$1}"
 
     response = client.query($1)
     result = response["Result"].subpods[0].plaintext
