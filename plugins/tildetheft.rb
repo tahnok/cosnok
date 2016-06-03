@@ -1,7 +1,7 @@
 class Tildetheft
   include Cinch::Plugin
 
-  match "(.*)"
+  match /(.*)/
 
   def execute(m, message)
     debug "check if #{m.user.nick} is tildebot"
