@@ -1,6 +1,6 @@
 require 'wolfram-alpha'
 
-class Dice
+class Wolfram
   include Cinch::Plugin
 
 
