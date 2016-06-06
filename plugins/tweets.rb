@@ -8,7 +8,7 @@ class Tweets
 
   def execute(m,id)
     status = twitter.status(id)
-    m.reply "[\"#{status.text.join('\n ')}\" @#{status.user.screen_name}]"
+    m.reply "[\"#{status.text.gsub(/\n/, ' \n ')}\" @#{status.user.screen_name}]"
   end
 
   def help
