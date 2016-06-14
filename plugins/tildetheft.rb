@@ -17,7 +17,7 @@ class Tildetheft
   end
 
   def help
-    "hello - get hello"
+    "tildetheft: say cosnok: tilde and I will try to be my sneakiest"
   end
 
   def client
