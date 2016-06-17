@@ -16,9 +16,7 @@ class Worldfeed
     if feed.updated.content > @last_poll
       feed.items.select{|f| f.updated.content > @last_poll}.each do |f|
         title = f.title.content
-        link = f.link.href
-        author = f.author.name.content
-        Channel("#worldfeed").send("#{title}: #{link} ~#{author}")
+        Channel("#worldfeed").send(title)
       end
     end
     @last_poll = feed.updated.content
