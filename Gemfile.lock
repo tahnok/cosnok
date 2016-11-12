@@ -4,6 +4,8 @@ GEM
     addressable (2.4.0)
     buftok (0.2.0)
     cinch (2.2.4)
+    coderay (1.1.1)
+    diff-lcs (1.2.5)
     domain_name (0.5.20160310)
       unf (>= 0.0.5, < 1.0.0)
     equalizer (0.0.10)
@@ -21,12 +23,34 @@ GEM
     json (1.8.3)
     memoizable (0.4.2)
       thread_safe (~> 0.3, >= 0.3.1)
+    method_source (0.8.2)
     mini_portile2 (2.0.0)
     multipart-post (2.0.0)
     naught (1.1.0)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
+    opengraph_parser (0.2.3)
+      addressable
+      nokogiri
+    pry (0.10.4)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
+    rspec (3.5.0)
+      rspec-core (~> 3.5.0)
+      rspec-expectations (~> 3.5.0)
+      rspec-mocks (~> 3.5.0)
+    rspec-core (3.5.4)
+      rspec-support (~> 3.5.0)
+    rspec-expectations (3.5.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.5.0)
+    rspec-mocks (3.5.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.5.0)
+    rspec-support (3.5.0)
     simple_oauth (0.3.1)
+    slop (3.6.0)
     thread_safe (0.3.5)
     twitter (5.16.0)
       addressable (~> 2.3)
@@ -50,8 +74,11 @@ PLATFORMS
 
 DEPENDENCIES
   cinch
+  opengraph_parser
+  pry
+  rspec (~> 3.5)
   twitter
   wolfram-alpha
 
 BUNDLED WITH
-   1.11.2
+   1.12.5
