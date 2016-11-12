@@ -9,7 +9,7 @@ class Links
   match PATTERN
 
   def execute(m, url)
-    page = OpenGraph.new("http://ogp.me")
+    page = OpenGraph.new(url)
     m.reply "[\"#{page.title}\"]"
   end
 
