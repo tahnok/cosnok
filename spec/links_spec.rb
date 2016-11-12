@@ -1,3 +1,4 @@
+require 'spec_helper'
 require 'cinch'
 require './plugins/links.rb'
 require 'pry'
@@ -40,13 +41,15 @@ RSpec.describe Links do
     end
   end
 
-  context "execute" do
+  context "execute", :vcr do
+
     before do
       URL = "http://ogp.me/"
       @msg = double("msg")
     end
 
     it "executes" do
+
       expect(@msg).to receive(:reply).with("[\"Open Graph protocol\"]")
       @plugin.execute(@msg, URL)
     end
