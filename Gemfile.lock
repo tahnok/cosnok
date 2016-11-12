@@ -32,9 +32,9 @@ GEM
     naught (1.1.0)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
-    opengraph_parser (0.2.3)
-      addressable
-      nokogiri
+    open_graph_reader (0.6.1)
+      faraday (~> 0.9.0)
+      nokogiri (~> 1.6)
     pry (0.10.4)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -83,7 +83,7 @@ PLATFORMS
 
 DEPENDENCIES
   cinch
-  opengraph_parser
+  open_graph_reader
   pry
   rspec (~> 3.5)
   twitter

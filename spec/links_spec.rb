@@ -44,14 +44,16 @@ RSpec.describe Links do
   context "execute", :vcr do
 
     before do
-      URL = "http://ogp.me/"
       @msg = double("msg")
     end
 
-    it "executes" do
-
+    it "return title if og:title" do
       expect(@msg).to receive(:reply).with("[\"Open Graph protocol\"]")
-      @plugin.execute(@msg, URL)
+      @plugin.execute(@msg, "http://ogp.me/")
+    end
+
+    it "says nothing if url has no title" do
+      @plugin.execute(@msg, "http://tahnok.me/")
     end
   end
 end

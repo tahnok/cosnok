@@ -1,0 +1,220 @@
+---
+http_interactions:
+- request:
+    method: head
+    uri: http://tahnok.me/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - text/html
+      User-Agent:
+      - OpenGraphReader/0.6.1 (+https://github.com/jhass/open_graph_reader)
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      Server:
+      - nginx/1.8.1
+      Date:
+      - Sat, 12 Nov 2016 20:48:13 GMT
+      Content-Type:
+      - text/html
+      Content-Length:
+      - '184'
+      Connection:
+      - keep-alive
+      Location:
+      - https://tahnok.me/
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 12 Nov 2016 20:48:13 GMT
+- request:
+    method: head
+    uri: https://tahnok.me/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - text/html
+      User-Agent:
+      - OpenGraphReader/0.6.1 (+https://github.com/jhass/open_graph_reader)
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.8.1
+      Date:
+      - Sat, 12 Nov 2016 20:48:13 GMT
+      Content-Type:
+      - text/html
+      Content-Length:
+      - '3874'
+      Last-Modified:
+      - Mon, 15 Oct 2012 21:09:16 GMT
+      Connection:
+      - keep-alive
+      Etag:
+      - '"507c7b7c-f22"'
+      Accept-Ranges:
+      - bytes
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 12 Nov 2016 20:48:13 GMT
+- request:
+    method: get
+    uri: http://tahnok.me/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - text/html
+      User-Agent:
+      - OpenGraphReader/0.6.1 (+https://github.com/jhass/open_graph_reader)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      Server:
+      - nginx/1.8.1
+      Date:
+      - Sat, 12 Nov 2016 20:48:13 GMT
+      Content-Type:
+      - text/html
+      Content-Length:
+      - '184'
+      Connection:
+      - keep-alive
+      Location:
+      - https://tahnok.me/
+    body:
+      encoding: UTF-8
+      string: "<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body
+        bgcolor=\"white\">\r\n<center><h1>301 Moved Permanently</h1></center>\r\n<hr><center>nginx/1.8.1</center>\r\n</body>\r\n</html>\r\n"
+    http_version: 
+  recorded_at: Sat, 12 Nov 2016 20:48:13 GMT
+- request:
+    method: get
+    uri: https://tahnok.me/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - text/html
+      User-Agent:
+      - OpenGraphReader/0.6.1 (+https://github.com/jhass/open_graph_reader)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.8.1
+      Date:
+      - Sat, 12 Nov 2016 20:48:14 GMT
+      Content-Type:
+      - text/html
+      Last-Modified:
+      - Mon, 15 Oct 2012 21:09:16 GMT
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Etag:
+      - W/"507c7b7c-f22"
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+          <title>Pomobat</title>
+
+          <meta name="Pomobat" content="A web based pomodoro app">
+          <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+          <link href="assets/css/bootstrap.css" rel="stylesheet">
+          <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+          <link href="assets/css/main.css" rel="stylesheet">
+          <script src="assets/js/coffee-script.js" type="text/javascript"></script>
+          <script src="assets/js/es5-shim.js" type="text/javascript"></script>
+          <script src="assets/js/batman.js" type="text/javascript"></script>
+          <script src="assets/js/jquery.min.js" type="text/javascript"></script>
+          <script src="assets/js/jquery-ui.min.js" type="text/javascript"></script>
+          <script src="assets/js/bootstrap.js" type="text/javascript"></script>
+          <script src="assets/js/buzz.js" type="text/javascript"></script>
+          <script src="assets/js/pomobat.js" type="text/javascript"></script>
+        </head>
+
+        <body>
+          <div data-yield="main" ></div>
+          <div data-defineview="pomodoros/index" >
+            <div id="main" class="span4">
+              <div id="popout">
+                <a href="#" data-event-click="showSettings"><i class="icon-cog"></i></a>
+                <a href="#" data-event-click="popout"><i class="icon-share"></i></a></div>
+              <div class="page-header">
+                <h1 id="heading">Pomobat <img src="assets/img/logo.png" alt="pomobat logo"> </h1>
+              </div>
+              <div id="settings" class="well">
+                Settings:
+                <i id="clear-settings" data-event-click="hideSettings" class="icon-remove-circle"></i>
+                <label><input id="work_time" type="text"> Work time</label>
+                <label><input id="break_time" type="text"> Break time</label>
+                <label><input id="long_break_time" type="text"> Long Break time</label>
+                <label><input id="use_sounds" type="checkbox"> Use sounds?</label>
+              </div>
+              <div data-showif="currentPomodoro.is_new">
+                <form data-formfor-pomodoro="currentPomodoro" data-event-submit="startPomodoro" class="well">
+                  <a href="#" class="btn btn-large btn-success" data-event-click="startPomodoro"><i class="icon-play icon-white"></i> Start</a>
+                  <br>
+                  <br>
+                  <label><input id="currentPomodoro" placeholder="what are you working on?" type="text" data-bind="pomodoro.title"></label>
+                </form>
+              </div>
+              <div id="rateMe"></div>
+              <div data-hideif="currentPomodoro.is_new" class="well">
+                <span data-showif="currentPomodoro.title.length">Working on: </span><span data-bind="currentPomodoro.title"></span>
+                <h1 data-bind="timeLeft"></h1>
+                <div data-hideif="currentPomodoro.finished">
+                  <span data-hideif="paused">
+                    <a href="#" class="btn" data-event-click="togglePaused"><i class="icon-pause"></i> Pause  </a>
+                  </span>
+                  <span data-showif="paused">
+                    <a href="#" class="btn" data-event-click="togglePaused"><i class="icon-play"></i> Resume</a>
+                  </span>
+                  <a href="#" class="btn btn-danger" data-event-click="stopPomodoro"><i class="icon-stop icon-white"></i> Cancel</a>
+                </div>
+                <div data-showif="currentPomodoro.finished">
+                  <a href="#" class="btn btn-success" data-event-click="startBreak"><i class="icon-thumbs-up icon-white"></i> Break time</a>
+                  <a href="#" class="btn btn-inverse" data-event-click="newPomodoro"><i class="icon-repeat icon-white"></i> New Pomodoro</a>
+                </div>
+              </div>
+              <div>
+                Pomodoros completed: <span data-bind="Pomodoro.finished.length" class="badge badge-success"></span>
+              </div>
+              <footer><a href="mailto:tahnok@gmail.com">Wesley Ellis</a>, <a href="https://github.com/tahnok/Pomobat">Source</a></footer>
+            </div>
+          </div>
+        </body>
+        </html>
+    http_version: 
+  recorded_at: Sat, 12 Nov 2016 20:48:14 GMT
+recorded_with: VCR 3.0.3
