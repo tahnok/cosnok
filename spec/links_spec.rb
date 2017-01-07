@@ -55,5 +55,9 @@ RSpec.describe Links do
     it "says nothing if url has no title" do
       @plugin.execute(@msg, "http://tahnok.me/")
     end
+
+    it "says nothing is url is on blacklist" do
+      @plugin.execute(@msg, "https://github.com/uOttawa-Makerspace/MakerSpaceRepo")
+    end
   end
 end

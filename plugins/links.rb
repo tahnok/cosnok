@@ -8,10 +8,20 @@ class Links
 
   match PATTERN
 
+  BLACKLIST = [
+    'github.com',
+  ]
+
   def execute(m, url)
+    return if blacklisted?(url)
     page = OpenGraphReader.fetch(url)
     return unless page
     m.reply "[\"#{page.og.title}\"]"
+  end
+
+  def blacklisted?(url)
+    host = URI.parse(url).host
+    BLACKLIST.include?(host)
   end
 
   def help
