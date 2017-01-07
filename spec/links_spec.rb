@@ -59,5 +59,16 @@ RSpec.describe Links do
     it "says nothing is url is on blacklist" do
       @plugin.execute(@msg, "https://github.com/uOttawa-Makerspace/MakerSpaceRepo")
     end
+
+    it "expands tweets" do
+      tweet = double("tweet", text: "Current status: listening to lots of weirdddd radio protocols: https://t.co/Ry8mAUDRom", user: double("twitter user", screen_name: "tahnok"))
+      twitter_client = double("twitter_client")
+      allow(twitter_client).to receive(:status) { tweet }
+      @plugin.twitter_client = twitter_client
+
+      expect(@msg).to receive(:reply).with("[\"Current status: listening to lots of weirdddd radio protocols: https://t.co/Ry8mAUDRom\" @tahnok]")
+
+      @plugin.execute(@msg, "https://twitter.com/tahnok/status/803049967053078528")
+    end
   end
 end
