@@ -56,8 +56,12 @@ RSpec.describe Links do
       @plugin.execute(@msg, "http://tahnok.me/")
     end
 
-    it "says nothing is url is on blacklist" do
+    it "says nothing if for github" do
       @plugin.execute(@msg, "https://github.com/uOttawa-Makerspace/MakerSpaceRepo")
+    end
+
+    it "says nothing if for imgur" do
+      @plugin.execute(@msg, "https://imgur.com/a/s8pi2")
     end
 
     it "expands tweets" do
