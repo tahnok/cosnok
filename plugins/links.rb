@@ -15,6 +15,7 @@ class Links
   BLACKLIST = [
     'github.com',
     'imgur.com',
+    'media.giphy.com',
   ]
 
   def execute(m, url)

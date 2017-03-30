@@ -64,6 +64,10 @@ RSpec.describe Links do
       @plugin.execute(@msg, "https://imgur.com/a/s8pi2")
     end
 
+    it "says nothing for giphy" do
+      @plugin.execute(@msg, "https://media.giphy.com/media/10LKovKon8DENq/giphy.gif")
+    end
+
     it "expands tweets" do
       tweet = double("tweet", text: "Current status: listening to lots of weirdddd radio protocols: https://t.co/Ry8mAUDRom", user: double("twitter user", screen_name: "tahnok"))
       twitter_client = double("twitter_client")
