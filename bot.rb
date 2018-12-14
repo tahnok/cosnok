@@ -13,7 +13,7 @@ end
 
 bot = Cinch::Bot.new do
   configure do |c|
-    c.server = "127.0.0.1"
+    c.server = ENV["IRC_SERVER"] || "127.0.0.1"
     c.channels = ["#tildetown", "#bots", "#worldfeed"]
     c.port = 8866
     c.nick = botname
